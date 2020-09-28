@@ -18,7 +18,7 @@ case $opt in
 		break
 	;;
 	Grafico)
-		system set-default graphical.target
+		systemctl set-default graphical.target
 		break
 	;;
 	Salir)
@@ -27,4 +27,4 @@ case $opt in
 	esac
 done
 #echo "Reinicia para aplicar cambios"
-reboot
+systemctl reboot
